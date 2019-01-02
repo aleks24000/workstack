@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "workstack",
+    "packageName": "io.workstack",
+    "packageFolder": "io/workstack",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.7.2",
+    "jwtSecretKey": "NzkxMGMyNWRkNjc2MTAyMmZhZmJmMWE4N2I1NTdjZmMxMzUzZGY3NTJhZWU4M2M3NzU2NTRiZDIyZmMyYmNhOGNmYjhiNmJlNjJhYjUxOGEzMjIzYTQ1Y2ViN2JjODI3MzdkMmExNThhY2FjOTQxMTBkNmM0MmVhMDBkMjM5ODk=",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "aleks24000",
+  "repository-name": "workstack"
+}

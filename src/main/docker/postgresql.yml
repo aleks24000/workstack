@@ -1,0 +1,11 @@
+version: '2'
+services:
+    workstack-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/workstack/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=workstack
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
