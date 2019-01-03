@@ -1,0 +1,36 @@
+{
+    "name": "Project",
+    "fields": [
+        {
+            "fieldName": "techId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "userPrefs",
+            "otherEntityName": "userPrefs",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "deliverable",
+            "otherEntityName": "deliverable",
+            "otherEntityRelationshipName": "project"
+        }
+    ],
+    "changelogDate": "20190103200222",
+    "entityTableName": "project",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

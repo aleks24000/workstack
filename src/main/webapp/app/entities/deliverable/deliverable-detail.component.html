@@ -1,0 +1,41 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="deliverable">
+            <h2><span jhiTranslate="workstackApp.deliverable.detail.title">Deliverable</span> {{deliverable.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="workstackApp.deliverable.techId">Tech Id</span></dt>
+                <dd>
+                    <span>{{deliverable.techId}}</span>
+                </dd>
+                <dt><span jhiTranslate="workstackApp.deliverable.name">Name</span></dt>
+                <dd>
+                    <span>{{deliverable.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="workstackApp.deliverable.spentTime">Spent Time</span></dt>
+                <dd>
+                    <span>{{deliverable.spentTime}}</span>
+                </dd>
+                <dt><span jhiTranslate="workstackApp.deliverable.project">Project</span></dt>
+                <dd>
+                    <div *ngIf="deliverable.project">
+                        <a [routerLink]="['/project', deliverable.project?.id, 'view']">{{deliverable.project?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/deliverable', deliverable.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
