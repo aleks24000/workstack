@@ -1,0 +1,23 @@
+{
+    "workstackApp": {
+        "userPrefs": {
+            "home": {
+                "title": "UserPrefs",
+                "createLabel": "Créer un nouveau User Prefs",
+                "createOrEditLabel": "Créer ou éditer un User Prefs",
+                "search": "Recherche pour User Prefs"
+            },
+            "created": "Un nouveau User Prefs a été créé avec l'identifiant {{ param }}",
+            "updated": "Le User Prefs avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le User Prefs avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le User Prefs {{ id }} ?"
+            },
+            "detail": {
+                "title": "User Prefs"
+            },
+            "login": "Login",
+            "project": "Project"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "UserPrefs",
+    "fields": [
+        {
+            "fieldName": "login",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "project",
+            "otherEntityName": "project",
+            "otherEntityRelationshipName": "userPrefs"
+        }
+    ],
+    "changelogDate": "20190103200221",
+    "entityTableName": "user_prefs",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

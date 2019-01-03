@@ -38,6 +38,13 @@ public class CacheConfiguration {
             cm.createCache(io.workstack.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(io.workstack.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(io.workstack.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(io.workstack.domain.UserPrefs.class.getName(), jcacheConfiguration);
+            cm.createCache(io.workstack.domain.UserPrefs.class.getName() + ".projects", jcacheConfiguration);
+            cm.createCache(io.workstack.domain.Project.class.getName(), jcacheConfiguration);
+            cm.createCache(io.workstack.domain.Project.class.getName() + ".deliverables", jcacheConfiguration);
+            cm.createCache(io.workstack.domain.Deliverable.class.getName(), jcacheConfiguration);
+            cm.createCache(io.workstack.domain.Deliverable.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(io.workstack.domain.Task.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
