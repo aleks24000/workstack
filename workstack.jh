@@ -1,0 +1,42 @@
+
+
+entity UserPrefs {
+	login String
+}
+entity Project {
+    techId String,
+    name String
+}
+
+entity Deliverable{
+	techId String,
+    name String,
+    spentTime Int
+}
+
+entity Task{
+	name String,
+    spentTime Int
+}
+
+relationship OneToMany {
+	UserPrefs{project} to
+	Project
+    Project{deliverable} to
+	Deliverable
+    Deliverable{task} to
+	Task
+}
+
+// Set pagination options
+paginate Project, Deliverable, Task with infinite-scroll
+//paginate Job with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
